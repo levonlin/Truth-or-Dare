@@ -1,0 +1,31 @@
+    .btn-info{
+      background-color: #46b8da;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+    .navbar-text{
+                        font-size: 27px;
+                        font-weight: bold;
+                        font-family:微软雅黑;
+                        color:#46b8da;
+                        text-align:center;
+                      }
+    .question{
+      padding:25px 5px 20px 15px;
+      border:7px double;
+      border-color: #46b8da;
+      border-radius: 15px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align:left;
+      font-family:微软雅黑;
+    }
+    .btndown{
+      font-weight: bold;
+    }
+    #blank1{
+      height:25px;
+    }
+    #blank2{
+      height:70px;
+    }
