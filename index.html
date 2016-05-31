@@ -1,30 +1,70 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
-  </head>
-  <body>
-  <div class="blank">
-  </div>
-  <div class="topbtn">
-  <a href="zhenxinhua.html" class="btn btn-block" role="button">
-  真心话
-  </a>
-  </div>
-  <div id="or">or</div>
-  <div class="bottombtn">
-    <a href="damaoxian.html" class="btn btn-block" role="button">
-    大冒险
-    </a>
-  </div>
-  <div class="blank">
-  </div>
-  <div class="alert alert-info" role="alert" id="tips"><span class="glyphicon glyphicon-hand-up"></span> 点击按钮开始</div>
- <script type="text/javascript" src="js/jquery.min.js"></script>
- <script type="text/javascript" src="js/bootstrap.min.js"></script>
- </body>
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="page" id="index-page">
+        <header>
+            <nav class="navbar navbar-default container">
+                <ul class="nav row">
+                    <li class="col-xs-12 col-sm-12 col-m-12">
+                        <h3 class="page-title">真心话 or 大冒险</h3>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="choice">
+            <button type="button" class="btn btn-default btn-lg left-in">真心话</button>
+        </section>
+        <section class="choice">
+            <button type="button" class="btn btn-default btn-lg right-in">大冒险</button>
+        </section>
+        <section class="choice">
+            <button type="button" class="btn btn-default btn-lg left-in">无所谓</button>
+        </section>
+    </div>
+
+    <div class="page" id="question-page">
+        <header>
+            <nav class="navbar navbar-default container">
+                <ul class="nav row">
+                    <li class="col-xs-4 col-sm-4 col-m-4">
+                        <h3 class="go-back"><span class="glyphicon glyphicon-chevron-left"></span></h3></li>
+                    <li class="col-xs-4 col-sm-4 col-m-4">
+                        <h3 class="page-title"></h3></li>
+                    <li class="col-xs-4 col-sm-4 col-m-4"></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="content">
+            <p>
+                <span class="loading">加载中...</span>
+            </p>
+        </section>
+        <footer>
+            <nav class="navbar navbar-default navbar-fixed-bottom container">
+                <ul class="nav row">
+                    <li class="col-xs-6 col-sm-6 col-m-6">
+                        <button type="button" class="btn btn-default btn-lg prev-question"> 
+                        </button>
+                    </li>
+                    <li class="col-xs-6 col-sm-6 col-m-6">
+                        <button type="button" class="btn btn-default btn-lg pull-right next-question">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+    <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
 </html>
