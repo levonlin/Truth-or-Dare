@@ -1,127 +1,64 @@
-    .btn {
-            font-size: 70px;
-            font-weight: bold;
-            font-family:微软雅黑;
-            color:#5bc0de;
-            text-align:center;
-            border-color: #46b8da;
-            border-radius:15px;
-            border-width: 3px;
-         } 
-    .topbtn{
-              text-align:center;
-              position:relative;
-              animation: topin 2s;
-              -webkit-animation: topin 2s;
-              -moz-animation: topin 2s;
-           }    
-     @keyframes topin
-    {
-      0%{top: -100px}
-      50%{top: 45px;}
-      100%{top: 10px;}
-    } 
-    @-webkit-keyframes topin
-    {
-      0%{top: -100px}
-      50%{top: 45px;}
-      100%{top: 10px;}
-    } 
-    @-moz-keyframes topin
-    {
-      0%{top: -100px}
-      50%{top: 45px;}
-      100%{top: 10px;}
-    } 
-    .bottombtn{
-                text-align:center;
-                position:relative;
-                animation: bottomin 2s;
-              -webkit-animation: bottomin 2s;
-              -moz-animation: bottomin 2s;
-              }
-    @keyframes bottomin
-    {
-      0%{bottom: -100px}
-      50%{bottom: 45px;}
-      100%{bottom: 10px;}
-    } 
-    @-webkit-keyframes bottomin
-    {
-      0%{bottom: -100px}
-      50%{bottom: 45px;}
-      100%{bottom: 10px;}
-    } 
-    @-moz-keyframes bottomin
-    {
-      0%{bottom: -100px}
-      50%{bottom: 45px;}
-      100%{bottom: 10px;}
-    } 
+.page {
+  overflow: hidden;
+}
 
+header h3.page-title {
+    text-align: center;
+}
 
-    .blank{
-      height: 10px;
+#index-page section.choice {
+    margin: 50px 0;
+    text-align: center;
+}
+
+#index-page section.choice button {
+    width: 50%;
+}
+
+@keyframes leftin {
+    0% {
+        transform: translateX(-100px);
     }
-
-
-   #or{
-    font-size: 60px;
-    font-weight: bold;
-    color:#5bc0de;
-    text-align:center;
-    position:relative;
-    animation: roll 2.3s;
-    -webkit-animation: roll 2.3s;
-    -moz-animation: roll 2.3s;
-   }
-    @keyframes roll
-    {
-      0%{opacity: 0;}
-      70%{opacity: 0;}
-      95%{opacity: 1;-webkit-transform:rotate(0deg);}
-      100%{-webkit-transform:rotate(360deg);}
+    100% {
+        transform: translateX(0px);
     }
-    @-webkit-keyframes roll
-    {
-      0%{opacity: 0;}
-      70%{opacity: 0;}
-      95%{opacity: 1;-webkit-transform:rotate(0deg);}
-      100%{-webkit-transform:rotate(360deg);}
+}
+
+@keyframes rightin {
+    0% {
+        transform: translateX(100px);
     }
-    @-moz-keyframes roll
-    {
-      0%{opacity: 0;}
-      70%{opacity: 0;}
-      95%{opacity: 1;-webkit-transform:rotate(0deg);}
-      100%{-webkit-transform:rotate(360deg);}
+    100% {
+        transform: translateX(0px);
     }
+}
+
+#index-page section.choice button.left-in {
+    animation: leftin ease 0.8s;
+}
+
+#index-page section.choice button.right-in {
+    animation: rightin ease 0.8s;
+}
 
 
-   #tips{
+#question-page {
+  display: none;
+}
+
+#question-page .content {
+    position: absolute;
+    top: 70px;
+    bottom: 60px;
+    box-sizing: border-box;
+    width: 90%;
+    padding: 10px;
+    border: 7px double;
+    border-radius: 15px;
+    margin: 0 5%;
     font-size: 20px;
-    font-weight: bold;
-    text-align:center;
-    position:relative;
-    animation: appear 2.3s;
-    -webkit-animation: appear 2.3s;
-    -moz-animation: appear 2.3s;
-   }
-    @keyframes appear
-    {
-      0%{opacity: 0;}
-      90%{opacity:0;}
-      100%{opacity:1;}
-    }
-   @-webkit-keyframes appear
-    {
-      0%{opacity: 0;}
-      90%{opacity:0;}
-      100%{opacity:1;}
-    }
-     @-moz-keyframes appear
-    {
-      0%{opacity: 0;}
-      90%{opacity:0;}
-      100%{opacity:1;}
-    }
+}
+
+#question-page footer .btn-lg {
+    height: 50px;
+}
