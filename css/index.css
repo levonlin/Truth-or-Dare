@@ -15,32 +15,37 @@ header h3.page-title {
     width: 50%;
 }
 
-@keyframes leftin {
+@-webkit-keyframes leftin {
     0% {
-        transform: translateX(-100px);
+        -webkit-transform: translateX(-100px);
+                transform: translateX(-100px);
     }
     100% {
-        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
     }
 }
 
-@keyframes rightin {
+@-webkit-keyframes rightin {
     0% {
-        transform: translateX(100px);
+        -webkit-transform: translateX(100px);
+                transform: translateX(100px);
     }
     100% {
-        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
     }
 }
 
 #index-page section.choice button.left-in {
-    animation: leftin ease 0.8s;
+    -webkit-animation: leftin ease 0.8s;
+            animation: leftin ease 0.8s;
 }
 
 #index-page section.choice button.right-in {
-    animation: rightin ease 0.8s;
+    -webkit-animation: rightin ease 0.8s;
+            animation: rightin ease 0.8s;
 }
-
 
 #question-page {
   display: none;
