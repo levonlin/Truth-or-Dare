@@ -1,4 +1,4 @@
 Truth-or-Dare
 =============
 
-This is a mobile Truth or Dare web app.
+A mobile Truth or Dare web app builded with bootstrap.
