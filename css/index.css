@@ -1,5 +1,18 @@
+html, 
+body {
+    height: 100%;
+}
+
 .page {
   overflow: hidden;
+  height: 100%;
+  background-color: #5299C0;
+}
+
+.navbar {
+    background-color: #4B7B95;
+    color: #fff;
+    border-color: #4B7B95;
 }
 
 header h3.page-title {
@@ -26,29 +39,7 @@ header h3.page-title {
     }
 }
 
-@keyframes leftin {
-    0% {
-        -webkit-transform: translateX(-100px);
-                transform: translateX(-100px);
-    }
-    100% {
-        -webkit-transform: translateX(0px);
-                transform: translateX(0px);
-    }
-}
-
 @-webkit-keyframes rightin {
-    0% {
-        -webkit-transform: translateX(100px);
-                transform: translateX(100px);
-    }
-    100% {
-        -webkit-transform: translateX(0px);
-                transform: translateX(0px);
-    }
-}
-
-@keyframes rightin {
     0% {
         -webkit-transform: translateX(100px);
                 transform: translateX(100px);
@@ -69,7 +60,6 @@ header h3.page-title {
             animation: rightin ease 0.8s;
 }
 
-
 #question-page {
   display: none;
 }
@@ -81,10 +71,11 @@ header h3.page-title {
     box-sizing: border-box;
     width: 90%;
     padding: 10px;
-    border: 7px double;
+    border: 7px double #c8c8c8;
     border-radius: 15px;
     margin: 0 5%;
-    font-size: 20px;
+    font-size: 28px;
+    color: #fff;
 }
 
 #question-page footer .btn-lg {
